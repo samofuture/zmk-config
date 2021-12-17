@@ -13,7 +13,8 @@
   //  flavor = "tap-preferred";
    // tapping_term_ms = <200>;
 };
-
+// https://github.com/zmkfirmware/zmk/blob/c9a671d8d5f6144771e3835322ce421012c39375/app/boards/arm/ferris/ferris_rev02.keymap
+// &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F
 / { 
 
     combos {

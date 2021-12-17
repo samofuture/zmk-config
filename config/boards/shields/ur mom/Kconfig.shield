@@ -1,0 +1,5 @@
+config SHIELD_UR_MOM_LEFT
+	def_bool $(shields_list_contains,ur_mom_left)
+
+config SHIELD_UR_MOM_RIGHT
+	def_bool $(shields_list_contains,ur_mom_right)

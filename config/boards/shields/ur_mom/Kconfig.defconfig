@@ -1,7 +1,7 @@
 if SHIELD_UR_MOM_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "ur mom left"
+	default "ur mom"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y

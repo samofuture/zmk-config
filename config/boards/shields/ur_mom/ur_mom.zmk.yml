@@ -1,0 +1,12 @@
+file_format: "1"
+id: ur_mom
+name: Ur_Mom
+type: shield
+url: https://github.com/C1ARKGABLE/zmk-config
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - ur_mom_left
+  - ur_mom_right

@@ -8,13 +8,6 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 endif
 
-if SHIELD_UR_MOM_RIGHT
-
-config ZMK_KEYBOARD_NAME
-	default "ur mom right"
-
-endif
-
 if SHIELD_UR_MOM_LEFT || SHIELD_UR_MOM_RIGHT
 
 config ZMK_SPLIT

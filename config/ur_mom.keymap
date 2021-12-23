@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 /*
  * Copyright (c) 2020 The ZMK Contributors
@@ -8,10 +9,10 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define NAV_L 1
-#define OTHER_L 2
-#define NUM_L 3
-#define SYM_L 4
+#define NAVLAYER 1
+#define OTHERLAYER 2
+#define NUMLAYER 3
+#define SYMLAYER 4
 
 
 / {
@@ -32,10 +33,10 @@
 
         default_layer {
             bindings = <
-                &kp Q      &kp W       &kp E          &kp R          &kp T         &kp Y            &kp U           &kp I       &kp O       &kp P
-                &kp A      &hm LCTRL S &hm LALT D     &hm LGUI F     &kp G         &kp H            &hm RGUI J      &hm LALT K  &hm RCTRL L &hm QUOT DQT
-                &kp Z      &kp X       &kp C          &kp V          &kp B         &kp N            &kp M           &kp COMMA   &kp DOT     &kp FSLH
-                                       &lt NAV_L TAB  &kp ENTER      &kp LGUI      &out OUT_TOG     &lt NUM_L SPACE &lt SYM_L BSPC
+                &kp Q      &kp W       &kp E             &kp R          &kp T         &kp Y            &kp U              &kp I       &kp O       &kp P
+                &kp A      &hm LCTRL S &hm LALT D        &hm LGUI F     &kp G         &kp H            &hm RGUI J         &hm LALT K  &hm RCTRL L &hm QUOT DQT
+                &kp Z      &kp X       &kp C             &kp V          &kp B         &kp N            &kp M              &kp COMMA   &kp DOT     &kp FSLH
+                                       &lt NAVLAYER TAB  &kp ENTER      &kp LGUI      &out OUT_TOG     &lt NUMLAYER SPACE &lt SYMLAYER BSPC
             >;
         };
 

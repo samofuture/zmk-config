@@ -16,8 +16,7 @@
 #define NUM_L 3
 #define SYM_L 4
 
-// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
+
 
 
 
@@ -71,7 +70,6 @@
             bindings = <&kp>, <&kp>;
         };
     };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -80,7 +78,7 @@
                 &kp Q      &kp W       &kp E          &kp R          &kp T         &kp Y            &kp U           &kp I       &kp O       &kp P
                 &kp A      &hm LCRTL S &hm LALT D     &hm LGUI F     &kp G         &kp H            &hm RGUI J      &hm LALT K  &hm RCRTL L &hm QUOT DQT
                 &kp Z      &kp X       &kp C          &kp V          &kp B         &kp N            &kp M           &kp COMMA   &kp DOT     &kp FSLH
-                                       &lt NAV_L TAB  &kp ENTER      &kp LGUI      &kp DEL          &lt NUM_L SPACE &lt SYM_L BKSP
+                                       &mt NAV_L TAB  &kp ENTER      &kp LGUI      &kp DEL          &mt NUM_L SPACE &mt SYM_L BKSP
             >;
         };
 

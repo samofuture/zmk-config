@@ -42,7 +42,7 @@
 
         nav_layer {
             bindings = <
-                &trans     &trans     &trans      &trans          &trans       &trans           &trans         &kp UP      &trans     &kp DEL
+                &kp H     &trans     &trans      &trans          &trans       &trans           &trans         &kp UP      &trans     &kp DEL
                 &trans     &trans     &trans      &trans          &trans       &trans           &kp LEFT       &kp DOWN    &kp RIGHT  &kp HOME
                 &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
                                       &trans      &trans          &trans       &trans           &kp ESC        &kp DEL

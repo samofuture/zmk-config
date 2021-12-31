@@ -9,9 +9,9 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define NAVLAYER 1
+#define NUMLAYER 1
 #define OTHERLAYER 2
-#define NUMLAYER 3
+#define NAVLAYER 3
 #define SYMLAYER 4
 
 
@@ -33,37 +33,37 @@
 
         default_layer {
             bindings = <
-                &hm GRAVE Q &hm N1 W    &hm N2 E         &hm N3 R       &hm N5 T      &hm N6 Y         &hm N7 U           &hm N8 I    &hm N9 O    &hm N0 P
-                &kp A       &hm LCTRL S &hm LALT D       &hm LCTRL F     &kp G         &kp H            &hm RGUI J         &hm RALT K  &hm RCTRL L &hm DQT QUOT
+                &hm GRAVE Q &hm N1 W   &hm N2 E         &hm N3 R       &hm N5 T      &hm N6 Y         &hm N7 U           &hm N8 I    &hm N9 O    &hm N0 P
+                &kp A       &kp S      &kp D            &kp F         &kp G         &kp H            &kp J              &kp K       &kp L       &kp SEMI
                 &kp Z       &kp X       &kp C            &kp V          &kp B         &kp N            &kp M              &kp COMMA   &kp DOT     &kp FSLH
-                                        &lt NAVLAYER TAB &kp ENTER      &kp LCTRL      &kp RSHIFT       &lt NUMLAYER SPACE &lt SYMLAYER BSPC
-            >;
-        };
-
-        nav_layer {
-            bindings = <
-                &kp H     &trans     &trans      &trans          &trans       &trans           &trans         &kp UP      &trans     &kp DEL
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp LEFT       &kp DOWN    &kp RIGHT  &kp HOME
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
-                                      &trans      &trans          &trans       &trans           &kp ESC        &kp DEL
-            >;
-        };
-
-        other_layer {
-            bindings = <
-                &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &trans      &trans     &trans
-                                      &trans      &trans          &trans       &trans           &trans         &trans
+                                        &lt NUMLAYER TAB &kp ENTER      &kp LCTRL      &kp RSHIFT       &lt NAVLAYER SPACE &lt SYMLAYER
             >;
         };
 
         num_layer {
             bindings = <
+                &kp LBKT     &kp RBKT     &trans      &kp STAR          &kp FSLH       &trans           &kp N7         &kp N8      &kp N9    &kp BSPC
+                &kp LPAR     &kp RPAR     &trans      &kp MINUS       &kp EQUAL    &trans           &kp N4       &kp N5    &kp N6       &kp N0
+                &kp LBRC     &kp RBRC     &trans      &trans          &trans       &trans           &kp N1       &kp N2   &kp N3     &kp ENTER
+                                      &trans      &trans          &trans       &trans           &kp DEL        &kp RSHIFT
+            >;
+        };
+
+        other_layer {
+            bindings = <
+                &trans     &trans     &trans      &trans          &trans       &trans           &kp LEFT        &kp UP      &kp RIGHT     &trans
+                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME         &kp DOWN      &kp END     &trans
+                &trans     &trans     &trans      &trans          &trans       &trans           &kp ESC       &kp PG_DN      &kp DEL     &trans
+                                      &trans      &trans          &trans       &trans           &trans         &kp PG_UP
+            >;
+        };
+
+        nav_layer {
+            bindings = <
                 &kp LBKT   &kp N7     &kp N8      &kp N9          &kp RBKT      &trans          &trans         &trans      &trans     &trans
-                &kp SEMI   &kp N4     &kp N5      &kp N6          &kp EQUAL     &trans          &trans         &trans      &trans     &trans
+                &kp SEMI   &kp N4     &kp N5      &kp N6          &kp EQUAL     &trans          &trans         &trans      &trans     &kp APOS
                 &kp GRAVE  &kp N1     &kp N2      &kp N3          &kp BSLH      &trans          &trans         &trans      &trans     &trans
-                                      &trans      &kp N0          &kp MINUS     &trans          &trans         &trans 
+                                      &trans      &kp LWIN          &kp MINUS     &trans          &trans         &trans 
             >;
         };
 

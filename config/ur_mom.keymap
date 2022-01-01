@@ -34,45 +34,45 @@
         default_layer {
             bindings = <
                 &hm GRAVE Q &hm N1 W   &hm N2 E         &hm N3 R       &hm N5 T      &hm N6 Y         &hm N7 U           &hm N8 I    &hm N9 O    &hm N0 P
-                &kp A       &kp S      &kp D            &kp F         &kp G         &kp H            &kp J              &kp K       &kp L       &kp SEMI
-                &kp Z       &kp X       &kp C            &kp V          &kp B         &kp N            &kp M              &kp COMMA   &kp DOT     &kp FSLH
-                                        &lt NUMLAYER TAB &kp ENTER      &kp LCTRL      &kp RSHIFT       &lt NAVLAYER SPACE &lt SYMLAYER BSPC
+                &kp A       &kp S      &kp D            &kp F          &kp G         &kp H            &kp J              &kp K       &kp L       &kp SEMI
+                &kp Z       &kp X      &kp C            &kp V          &kp B         &kp N            &kp M              &kp COMMA   &kp DOT     &kp FSLH
+                                        &lt NUMLAYER TAB &kp SPACE      &kp LCTRL      &kp RSHIFT       &lt NAVLAYER ENTER &lt SYMLAYER BSPC
             >;
         };
 
         num_layer {
             bindings = <
-                &kp LBKT     &kp RBKT     &trans      &kp STAR        &kp FSLH     &trans           &kp N7       &kp N8    &kp N9    &kp BSPC
-                &kp LPAR     &kp RPAR     &trans      &kp MINUS       &kp EQUAL    &trans           &kp N4       &kp N5    &kp N6    &kp N0
-                &kp LBRC     &kp RBRC     &trans      &trans          &trans       &trans           &kp N1       &kp N2    &kp N3    &kp ENTER
-                                      &trans      &trans          &trans       &trans           &kp DEL        &kp RSHIFT
+                &kp LBKT     &kp RBKT     &kp K_CUT      &kp KP_MULTIPLY &kp KP_DIVIDE      &trans    &kp KP_N7       &kp KP_N8    &kp KP_N9    &kp BSPC
+                &kp LPAR     &kp RPAR     &kp K_PASTE    &kp KP_MINUS    &kp KP_PLUS        &trans    &kp KP_N4       &kp KP_N5    &kp KP_N6    &kp KP_N0
+                &kp LBRC     &kp RBRC     &kp K_COPY     &kp KP_DOT      &kp K_CALC         &trans    &kp KP_N1       &kp KP_N2    &kp KP_N3    &kp KP_ENTER
+                                        &trans      &trans          &trans            &kp LALT           &kp DEL        &mo OTHERLAYER
             >;
         };
 
         other_layer {
             bindings = <
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp LEFT        &kp UP      &kp RIGHT     &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME         &kp DOWN      &kp END     &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp ESC       &kp PG_DN      &kp DEL     &trans
-                                      &trans      &trans          &trans       &trans           &trans         &kp PG_UP
+                &trans     &trans     &trans      &trans          &trans       &trans           &kp AMPS       &kp STAR    &trans     &trans
+                &trans     &trans     &trans      &trans          &trans       &trans           &kp DLLR       &kp PRCNT   &kp CARET    &trans
+                &trans     &trans     &trans      &trans          &trans       &trans           &kp EXCL       &kp AT      &kp HASH     &trans
+                                      &trans      &trans          &trans       &trans           &trans        &trans
             >;
         };
 
         nav_layer {
             bindings = <
-                &kp LBKT   &kp N7     &kp N8      &kp N9          &kp RBKT      &trans          &trans         &trans      &trans     &trans
-                &kp SEMI   &kp N4     &kp N5      &kp N6          &kp EQUAL     &trans          &trans         &trans      &trans     &kp APOS
-                &kp GRAVE  &kp N1     &kp N2      &kp N3          &kp BSLH      &trans          &trans         &trans      &trans     &trans
-                                      &trans      &kp LWIN          &kp MINUS     &trans          &trans         &trans 
+                &kp ESC     &kp HOME     &kp UP        &kp PG_UP         &kp K_REDO           &kp K_VOL_UP      &kp K_FORWARD    &trans      &trans     &trans
+                &trans      &kp LEFT     &kp DOWN      &kp RIGHT         &kp K_UNDO           &kp K_MUTE        &kp K_PP         &trans      &trans     &trans
+                &kp INS     &kp END       &trans       &kp PG_DN         &trans               &kp K_VOL_DN      &kp K_BACK       &trans      &trans     &trans
+                                      &trans      &kp LWIN          &trans              &trans          &trans         &trans 
             >;
         };
 
         sym_layer {
             bindings = <
-                &kp LBRC     &kp LS(N7)  &kp LS(N8)  &kp LS(N9) &kp RBRC       &trans &trans   &trans    &trans    &trans
-                &kp COLON     &kp LS(N4)  &kp LS(N5)  &kp LS(N6) &kp PLUS       &trans &trans   &trans    &trans    &trans
-                &kp TILDE     &kp LS(N1)  &kp LS(N2)  &kp LS(N3) &kp LS(BSLH)       &trans &trans   &trans    &trans    &trans
-                                          &trans      &kp LS(N0)     &kp UNDER           &trans          &trans         &trans 
+                &kp TAB     &kp PSCRN   &trans      &trans        &kp SYS_SLEEP  &kp SYS_WAKE    &kp F10  &kp F11   &kp F12   &trans
+                &kp F1      &kp F2      &kp F3      &kp F4        &kp F5         &kp F6          &kp F7   &kp F8    &kp F9    &trans
+                &trans      &trans      &trans      &trans        &trans         &trans          &trans   &trans    &trans    &trans
+                                          &trans      &trans     &trans           &trans          &trans         &trans 
             >;
         };
     };

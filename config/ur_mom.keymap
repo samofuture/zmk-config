@@ -33,7 +33,7 @@
 
         default_layer {
             bindings = <
-                &hm GRAVE Q &hm N1 W   &hm N2 E         &hm N3 R       &hm N5 T      &hm N6 Y         &hm N7 U           &hm N8 I    &hm N9 O    &hm N0 P
+                &hm N1 Q    &hm N2 W   &hm N3 E         &hm N4 R       &hm N5 T      &hm N6 Y         &hm N7 U           &hm N8 I    &hm N9 O    &hm N0 P
                 &kp A       &kp S      &kp D            &kp F          &kp G         &kp H            &kp J              &kp K       &kp L       &hm APOS SEMI
                 &kp Z       &kp X      &kp C            &kp V          &kp B         &kp N            &kp M              &kp COMMA   &kp DOT     &kp FSLH
                                         &lt NUMLAYER TAB &kp SPACE      &kp LCTRL      &kp RSHIFT       &lt NAVLAYER ENTER &lt SYMLAYER BSPC
@@ -51,7 +51,7 @@
 
         other_layer {
             bindings = <
-                &bootloader &trans     &trans      &trans          &trans       &trans           &kp AMPS       &kp STAR    &trans       &trans
+                &bootloader &trans     &trans      &trans          &trans       &trans           &kp AMPS       &kp STAR    &trans       &kp GRAVE
                 &reset      &trans     &trans      &trans          &trans       &trans           &kp DLLR       &kp PRCNT   &kp CARET    &trans
                 &trans      &trans     &trans      &trans          &trans       &trans           &kp EXCL       &kp AT      &kp HASH     &trans
                                        &trans      &trans          &trans       &trans           &trans        &trans
@@ -61,7 +61,7 @@
         nav_layer {
             bindings = <
                 &kp ESC     &kp HOME     &kp UP        &kp PG_UP         &trans                &trans                 &trans       &trans              &bt BT_SEL 0     &bt BT_SEL 3
-                &trans      &kp LEFT     &kp DOWN      &kp RIGHT         &kp LCTRL LEFT          &kp LC RIGHT          &trans       &kp LS(S)           &bt BT_SEL 1     &bt BT_SEL 4
+                &trans      &kp LEFT     &kp DOWN      &kp RIGHT         &kp LCTRL LEFT        &kp LCTRL RIGHT        &trans       &kp LS(S)           &bt BT_SEL 1     &bt BT_SEL 4
                 &kp INS     &kp END      &trans        &kp PG_DN         &trans                &trans                 &trans       &trans              &bt BT_SEL 2     &bt BT_CLR
                                          &trans      &kp LWIN          &trans              &trans          &trans         &trans 
             >;

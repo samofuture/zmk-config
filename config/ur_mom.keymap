@@ -26,17 +26,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        reset: behavior_reset {
-			compatible = "zmk,behavior-reset";
-			label = "RESET";
-			#binding-cells = <0>;
-		};
-        bootloader: behavior_reset_dfu {
-			compatible = "zmk,behavior-reset";
-			label = "BOOTLOADER_RESET";
-			type = <RST_UF2>;
-			#binding-cells = <0>;
-		};
     };
 
     keymap {
@@ -76,7 +65,7 @@
                 &kp INS     &kp END      &trans        &kp PG_DN         &trans                &trans                 &trans       &trans              &bt BT_SEL 2     &bt BT_CLR
                                          &trans      &kp LWIN          &trans              &trans          &trans         &trans 
             >;
-        }
+        };
 
         sym_layer {
             bindings = <
